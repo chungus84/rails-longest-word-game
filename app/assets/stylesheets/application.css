@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+ .tiles {
+  display: flex;
+  flex-direction: row;
+ }
+
+ .letter-tile {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  color: white;
+  margin-right: 10px;
+  text-align: center;
+  align-items: center;
+ }

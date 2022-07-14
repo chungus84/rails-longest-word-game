@@ -1,0 +1,13 @@
+<h1>Result</h1>
+
+<% if @included %>
+  <% if @api_answer %>
+    <p><strong>Well Done</strong> <%= @answer %> is an English word</p>
+  <% else %>
+    <p><strong><%= @answer %></strong> is not an English word</p>
+  <% end %>
+<% else %>
+  <p><strong><%= @answer %></strong> cannot be built out of <%= @letters.join(",") %></p>
+<% end %>
+
+<%= link_to "Play again", new_path %>
